@@ -1,9 +1,9 @@
 package com.example
 
+import com.example.model.PostgresTaskRepository
 import com.example.plugins.configureDatabases
 import com.example.plugins.configureRouting
 import com.example.plugins.configureSerialization
-import com.example.repository.FakeTaskRepository
 import io.ktor.server.application.*
 
 fun main(args: Array<String>) {
@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
 }
 
 fun Application.module() {
-    val taskRepository = FakeTaskRepository()
+    val taskRepository = PostgresTaskRepository()
 
     configureSerialization(taskRepository)
     configureDatabases()

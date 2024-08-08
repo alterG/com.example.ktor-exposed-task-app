@@ -2,7 +2,7 @@ package com.example.plugins
 
 import com.example.model.Priority
 import com.example.model.Task
-import com.example.repository.TaskRepository
+import com.example.model.TaskRepository
 import io.ktor.http.*
 import io.ktor.serialization.*
 import io.ktor.serialization.kotlinx.json.*

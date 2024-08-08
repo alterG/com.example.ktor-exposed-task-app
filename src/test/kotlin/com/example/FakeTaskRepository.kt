@@ -1,7 +1,8 @@
-package com.example.repository
+package com.example
 
 import com.example.model.Priority
 import com.example.model.Task
+import com.example.model.TaskRepository
 
 class FakeTaskRepository : TaskRepository {
 
